@@ -31,7 +31,7 @@ We love hearing from our readers! Whether you have feedback, suggestions, or jus
    - Facebook: [Mark-up! Blog](https://www.facebook.com/markupblog)
 
 3. **Contact Form:**
-   - Use our [contact form](#) on the website to send us a direct message. We'll get back to you as soon as possible.
+   - Use our [contact form](/) on the website to send us a direct message. We'll get back to you as soon as possible.
 
 ## Connect with Us
 
