@@ -9,7 +9,7 @@
 Mark-up is a blog website built for writing and reading articles in markdown!
 
 You can acess Mark-up! in the link bellow: <br>
-[https://www.mark-up.vercel.app](https://mark-up-blog.vercel.app/)
+https://mark-up-blog.vercel.app/
 
 ---
 
