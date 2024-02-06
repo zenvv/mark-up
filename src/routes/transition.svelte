@@ -6,7 +6,10 @@
 </script>
 
 {#key url}
-	<div class="h-full" in:fly={{ duration: 300, x: 50, opacity: 0.35, easing: quintOut }}>
+	<div
+		class="h-full overflow-x-hidden"
+		in:fly={{ duration: 300, x: 10, opacity: 0.35, easing: quintOut }}
+	>
 		<slot />
 	</div>
 {/key}

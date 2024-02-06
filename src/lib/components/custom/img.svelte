@@ -3,4 +3,4 @@
 	export let alt: string
 </script>
 
-<img {src} {alt} loading="lazy" class="transition-transform hover:scale-105" />
+<img {src} {alt} loading="lazy" class="transition-all hover:scale-110" />

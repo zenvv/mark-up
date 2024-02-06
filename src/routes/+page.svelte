@@ -10,7 +10,7 @@
 	<title>{config.title}</title>
 </svelte:head>
 
-<section class="flex flex-col gap-12 my-8">
+<section class="flex flex-col items-start justify-start gap-12 my-8">
 	<hgroup class="max-lg:px-4">
 		<h1 class="flex items-center gap-2"><BookOpenText /> Homepage</h1>
 		<h3 class="lading-none opacity-80">Choose a article bellow to read!</h3>
@@ -19,7 +19,7 @@
 		{#each data.posts as post}
 			<a
 				href={post.slug}
-				class="relative flex flex-col items-start justify-start gap-1 p-6 m-0 overflow-hidden leading-none transition-all bg-transparent border size-full rounded-xl hover:bg-zinc-200/25 dark:hover:bg-zinc-700/30 border-zinc-500/10 hover:border-zinc-500/50 group"
+				class="relative flex flex-col items-start justify-start gap-1 p-6 m-0 overflow-hidden leading-none transition-all border from-transparent to-zinc-500/0 size-full rounded-xl hover:bg-zinc-500/10 border-zinc-500/10 hover:border-zinc-500/50 group"
 			>
 				<span
 					class="absolute top-0 right-0 p-1.5 m-4 transition-all origin-top-right scale-0 border rounded-lg opacity-0 border-zinc-500/20 group-hover:opacity-100 group-hover:scale-100"

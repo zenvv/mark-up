@@ -1,11 +1,11 @@
 <script lang="ts">
 	import { page } from '$app/stores'
-	import { Frown, Undo2, FileQuestion } from 'lucide-svelte'
+	import { Undo2 } from 'lucide-svelte'
 </script>
 
-<div class="relative flex items-center justify-center w-full min-h-[70vh]">
-	<div class="flex flex-col items-center justify-center gap-6">
-		<h1 class="flex items-center gap-4 text-6xl">Oh no! <Frown size="58" /></h1>
+<div class="relative flex items-center justify-center w-full min-h-[50vh] overflow-hidden">
+	<div class="flex flex-col items-start justify-center gap-6">
+		<h1 class="text-6xl max-lg:text-5xl">Oh no! :(</h1>
 		<span
 			class="flex flex-col w-full gap-0 p-6 px-8 text-red-500 rounded-lg outline-2 outline-dashed outline-red-500/25 bg-red-600/5 -outline-offset-8 backdrop-blur-lg"
 		>
@@ -18,7 +18,4 @@
 			><Undo2 size="14" /> Take me back to homepage!</a
 		>
 	</div>
-	<span class="absolute -z-50 text-zinc-500/20">
-		<FileQuestion size="640" />
-	</span>
 </div>

@@ -44,7 +44,7 @@
 	const customCodeBlock: string =
 		'prose-pre:p-6 prose-pre:rounded-lg prose-pre:border prose-pre:border-zinc-500/20 dark:prose-pre:border-zinc-500/10 prose-pre:m-0'
 	const captionClass: string =
-		'prose-figcaption:m-0 prose-figcaption:px-2 prose-figcaption:py-1 prose-figure:m-0 prose-figure:mb-6 prose-figcaption:absolute prose-figcaption:right-0 prose-figcaption:m-2 prose-figcaption:select-none'
+		'prose-figcaption:m-0 prose-figcaption:px-2 prose-figcaption:py-1 prose-figure:m-0 prose-figure:relative prose-figure:mb-6 prose-figcaption:absolute prose-figcaption:right-0 prose-figcaption:m-4 prose-figcaption:select-none'
 	const titles: string = 'prose-h2:mb-0'
 </script>
 
@@ -54,18 +54,12 @@
 	<meta property="og:title" content={data.meta.title} />
 </svelte:head>
 
-<div class="relative flex items-start justify-center gap-8 my-8 max-lg:flex-col max-lg:my-0">
+<div class="relative flex flex-row-reverse items-stretch w-full gap-8 max-lg:flex-col">
 	<div
-		class="sticky flex flex-col col-span-3 gap-6 min-w-64 top-20 max-lg:static max-lg:top-0 max-lg:items-start max-lg:min-w-full max-lg:justify-start max-lg:gap-2 max-lg:border-b max-lg:border-zinc-500/20"
+		class="relative w-full min-h-full border-l max-w-64 border-zinc-500/20 max-lg:border-b max-lg:border-l-0 max-lg:max-w-full"
 	>
-		<a
-			href="/"
-			class="flex items-center gap-2 px-3 py-2 text-sm transition-all border rounded-lg max-w-max border-zinc-500/10 hover:bg-zinc-200 dark:hover:bg-zinc-800/50 max-lg:w-full"
-		>
-			<ChevronLeft size="14" /> Back to homepage
-		</a>
 		<div
-			class="flex flex-col items-start w-full p-4 px-6 overflow-y-auto border-r max-w-64 min-h-96 max-h-max max-lg:w-full border-zinc-500/20 max-lg:border-none max-lg:justify-self-end max-lg:px-4 max-lg:min-w-full max-lg:max-h-max max-lg:min-h-min"
+			class="sticky top-0 flex flex-col items-start justify-start gap-2 pt-8 pl-6 max-lg:justify-self-end max-lg:px-4 max-lg:min-w-full max-lg:static max-lg:pb-4"
 		>
 			<span class="flex items-center justify-between w-full mb-2">
 				<p
@@ -90,7 +84,7 @@
 			{/if}
 		</div>
 	</div>
-	<article class="relative w-full mb-20 max-lg:mb-8">
+	<article class="w-full mx-8 mt-8 mb-20 max-lg:mb-8">
 		<hgroup class="mb-4">
 			<h1>{data.meta.title}</h1>
 			<p class="text-sm opacity-70">Published at {formatDate(data.meta.date)}</p>
